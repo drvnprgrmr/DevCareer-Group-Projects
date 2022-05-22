@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="maurice.js" defer></script>
+    <link rel="stylesheet" href="maurice.css" />
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Add dynamic number -->
+    <!-- items left All Active Completed Clear Completed Drag and drop to reorder
+    list -->
+
+    <div class="hero">
+      <div class="container">
+        <div class="top">
+          <h2 class="top__title">TODO</h2>
+          <div class="top__switch-theme">
+            <img
+              src="images/icon-sun.svg"
+              alt="dark-theme"
+              class="switch-image"
+            />
+          </div>
+        </div>
+
+        <div class="add-task">
+          <input type="checkbox" class="add-task__checkbox" id="" />
+          <input
+            class="add-task__text"
+            type="text"
+            placeholder="Create a new todo.."
+          />
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+        <ul class="todo-list">
+          <li class="summary">
+            <p class="summary__items-left">0 item left</p>
+            <span class="summary-actions">
+              <p class="summary__items-all">All</p>
+              <p class="summary__items-active">Active</p>
+              <p class="summary__items-completed">Completed</p>
+            </span>
+            <p class="summary__items-clearCompleted">Clear Completed</p>
+          </li>
+        </ul>
+      </div>
+      <p class="info">Drag and drop to reorder list</p>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>

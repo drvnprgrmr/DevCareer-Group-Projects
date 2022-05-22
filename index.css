@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: hsl(240, 20%, 12%);
+}
+
+.container {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.top {
+  background-image: url("images/bg-desktop-dark.jpg");
+  background-size: cover;
+  height: 30vh;
+
+}
+
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 7vh;
+}
+
+.title h1 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.8rem;
+}
+
+.title__text {
+  color: white;
+  text-transform: uppercase;
+  
+}
+.switch-theme {
+  width: 1.5em;
+}
+
+.new-todo {
+  background-color: hsl(235, 24%, 19%);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 2vh;
+  display: flex;
+}
+
+.check-box {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid white;
+  border-radius: 16px;
+  opacity: 0.3;
+  margin: 0 1.2vh;
+  display: flex;
+  /* padding: 2px ; */
+}
+
+.check-box img {
+  margin: auto auto;
+}
+
+.new-todo__text {
+  color: white;
+  opacity: 0.5;
+}
+
+.todo {
+  list-style-type: none;
+  margin-top: -5vh;
+  padding: 0;
+  color: white;
+}
+
+.todo__item {
+  margin: 0;
+  background-color: hsl(235, 24%, 19%);
+  color: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  border-bottom: 1px solid rgba(175, 165, 146, 0.592);
+  display: flex;
+}
+
+.first {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}

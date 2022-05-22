@@ -1,0 +1,208 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Josefin Sans";
+  font-size: 1rem;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  font-size: 18px; /* 1.125rem*/
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  background-color: hsl(235, 21%, 11%);
+}
+
+.hero {
+  background-image: url("/images/bg-desktop-dark.jpg");
+  /* min-height: 40vh; */
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.switch-image {
+  cursor: pointer;
+}
+.container {
+  margin: 0 auto;
+  max-width: 50%;
+  padding-top: 2rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.top__title {
+  letter-spacing: 1.1rem;
+}
+
+.add-task {
+  background-color: hsl(235, 21%, 19%);
+  padding: 1rem;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.add-task__text {
+  all: unset;
+  width: 100%;
+  caret-color: hsl(220, 98%, 61%);
+}
+
+main {
+  /* background-color: hsl(235, 21%, 11%); */
+  /* min-height: 60vh; */
+}
+
+.todo-list {
+  border-radius: 10px;
+  margin-top: -4.5rem;
+  list-style: none;
+
+  /* box-shadow: 0px 3px 2px 1px #000; */
+}
+
+.todo-list__item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.5rem 1rem;
+  background-color: hsl(235, 21%, 19%);
+  border-bottom: 1px solid hsl(233, 14%, 26%);
+
+  cursor: pointer;
+}
+
+.todo-list__item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(235, 21%, 19%);
+  border-bottom: 1px solid hsl(233, 14%, 26%);
+  font-size: 1rem;
+  color: hsl(234, 11%, 52%);
+}
+
+.summary-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1rem;
+  color: hsl(234, 11%, 52%);
+}
+
+.info {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: hsl(233, 14%, 35%);
+  margin-bottom: 1.5rem;
+}
+
+input[type="checkbox"] {
+  border: 1px solid hsl(233, 14%, 35%);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+
+  transition: border 175ms ease-in;
+}
+
+.todo-list input[type="checkbox"]::before {
+  position: absolute;
+  content: url(/images/icon-check.svg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+input[type="checkbox"]:hover {
+  border: 1px solid hsl(236, 9%, 61%);
+}
+
+.todo-list input[type="checkbox"]:checked {
+  background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.todo-list input[type="checkbox"]:checked::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.active {
+  color: #fff;
+}
+.summary p {
+  transition: all 175ms ease-in;
+}
+.summary-actions p:first-child {
+  color: hsl(220, 98%, 61%);
+}
+.summary-actions p:not(:first-child):hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.summary p:last-child:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+/* for the light side */
+.light-mode {
+  background-color: #fff;
+  color: #000;
+  border-bottom: 1px solid hsl(236, 33%, 92%);
+}
+
+.banner-toggle {
+  background-image: url("/images/bg-desktop-light.jpg");
+}
+
+.checkbox-toggle {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  color: hsl(237, 14%, 35%);
+}
+
+.toggle-checkbox {
+  background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  content: url(/images/icon-check.svg);
+}
